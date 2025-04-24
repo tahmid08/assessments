@@ -1,0 +1,21 @@
+version: '3'
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    hostname: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    container_name: rabbitmq
+  service-1:
+    build: ./service-1-spring
+    depends_on:
+      - rabbitmq
+
+  service-2:
+    build: ./service-2-kotlin
+    depends_on:
+      - rabbitmq
