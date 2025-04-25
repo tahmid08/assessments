@@ -1,0 +1,5 @@
+Bonus points if you share notes on how you were able to leverage any AI
+tools to complete this assessment.
+
+-> I have encountered serveral challenges such as RabbitMQ connection, port conflicts, and dependencies version issues. 
+   AI tool such as ChatGpt or AI Overview helped me quickly identify and resolve these issues.
