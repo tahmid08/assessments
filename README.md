@@ -1,4 +1,4 @@
-Assessment Requirement: 
+Assessment Requirements: 
 
    Build service-1 using Spring (S1)
    
